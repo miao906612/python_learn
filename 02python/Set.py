@@ -85,7 +85,13 @@ print( (1,2,3) in S )
 print( (7,8,9) in S )
 print( ('1','b','c') in S )
 
-
+#Set comprehesions in Python 3.X and 2.7
+temp = {x ** 2 for x in [1,2,3,4]}
+print( temp )
+temp = { x for x in 'spam'}
+print( temp )
+temp = { x * 4 for x in 'spamspam'}
+print( temp )
 
 
 
