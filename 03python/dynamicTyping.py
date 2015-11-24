@@ -49,3 +49,15 @@ a = 3
 #References
 
 #References are automatically followed pointers from variables to objects
+
+
+#Shared References and immutable objects
+a = 3
+print( id(a) )
+b = a 
+print( id(b) )
+a = 'spam'
+print( id(a) )
+b = b + 2
+print( id(b) )
+
