@@ -46,4 +46,6 @@ a = 3
 #that the object's space is automatically thrown bakc into the free space
 #tool, to be reused for a future object.
 
+#References
 
+#References are automatically followed pointers from variables to objects
