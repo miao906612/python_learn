@@ -36,4 +36,14 @@ a = 3
 #2 Create the variable a, if it does not yet exist
 #3 Link the variable a to the new object 3
 
+#Objects
+
+#Objects are pieces of allocated memory, with enough space to represent
+#the values for which they stand and two standard header fileds:a type
+#designator used to mark the type of the object(a poniter to an object 
+#called int, the name of the integer type etc) and a reference counter
+#used to determine when it's OK to reclaim the object which is to say 
+#that the object's space is automatically thrown bakc into the free space
+#tool, to be reused for a future object.
+
 
