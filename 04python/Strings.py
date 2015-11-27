@@ -65,8 +65,29 @@ S = ("Meaning"
 		'life')
 print( S )
 
+#Escape Sequences
+#Note that the origin backslash characters are not really stored with the 
+#string in memory; they are used only to describe special character values
+#to be stored in the string. For coding such special characters, Python
+#recognizes a full set of escape code sequences, listed as below
 
-
+# \\			Backslash(stores one \)
+# \'			Single quote(stores ')
+# \"			Double quote(stores ")
+# \a			Bell
+# \b			Backspace
+# \f			Formfeed
+# \n			Newline(linefeed)
+# \r			Carriage return
+# \t			Horizontal tab
+# \v			Vertical tab
+# \xhh			Character with hex value hh(exactly 2 digits)
+# \ooo			Character with octal value ooo(up to 3 digits)
+# \0			Null:binary 0 character(doesn't end string)
+# \N{ id }		Unicode database ID
+# \uhhhh		Unicode character with 16-bit hex value
+# \Uhhhhhhhh	Unicode character with 32-bit hex value
+# \other		Not an escape(keeps both \ and other)
 
 
 
