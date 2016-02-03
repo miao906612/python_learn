@@ -90,12 +90,50 @@ print( S )
 # \other		Not an escape(keeps both \ and other)
 
 
+# Raw Strings Suppress Escapes
+
+# For example
+myfile=open("C:\new\tata",w);
+# This one is translated into "C:(newline)ew(tab)ata" which is not wanted
+myfile=open(r"C:\new\tata")
+myfile=open("C:\\new\\tata")
+# we can use forward slashes in directory paths on windows and Linux
+myfile=open("C:/new/tata")
 
 
+# Triple Quotes Code Multiline Block Strings
+# Triple quotes """ """ is a syntactic convenience for coding multiline 
+# text data.
+mantra = """Always look
+    on the bright
+    side of life."""
+# Note that if we want to print what we enter just as the way it is,
+# print() function should be used instead of echoing mechanism
+print(mantra)
 
+# Note that the trible quotes will retain all the enclosed text, 
+# including any to the right of your code that might intend as comments
+menu = """spam      # comments have add to string
+    eggs            # ditta
+    """
+# Trible quotes is used where multiline text is needed such as multiline
+# error messages, HTML, XML or JSON code.
 
+# Trible quotes are also commonly used for documentation strings, which 
+# are string literals that are taken as comments when they appear at 
+# specific points in your file
+def add(int a, int b):
+    """ this function is used to add two integers """
+    return a + b
 
-
+# Trible quotes are sometimes used to comment lines of your code
+# during development
+X = 1
+"""
+import os
+print(os.getcwd())
+"""
+Y = 2
 
 
 
